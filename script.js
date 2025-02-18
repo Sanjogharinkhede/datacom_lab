@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const card = document.createElement('div');
             card.className = 'col';
             card.innerHTML = `
-                <div class="card shadow-sm">
+                <div class="card shadow-lg border-2">
                     <a href="images/${topic}/${filename}" data-fancybox="gallery" data-caption="${caption}">
                         <img src="images/${topic}/${filename}" class="card-img-top" alt="${caption}">
                     </a>
@@ -111,6 +111,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         // Refresh Fancybox
+        $('[data-fancybox="gallery"]').fancybox({
+            loop: true,
+            buttons: ["zoom", "close"],
+        });
     }
 
     // Function to set the active class on the clicked link
