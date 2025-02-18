@@ -81,6 +81,12 @@
             "caption": "server services"
         }
     ],
+    "dns": [
+        {
+            "filename": "cmd.PNG",
+            "caption": "cmd"
+        }
+    ],
     "dual_stack": [
         {
             "filename": "pc0.PNG",
@@ -117,6 +123,24 @@
         {
             "filename": "topology.PNG",
             "caption": "topology"
+        }
+    ],
+    "dual_stack_ospf": [
+        {
+            "filename": "pc0_to_pc5_trace.PNG",
+            "caption": "pc0 to pc5 trace"
+        },
+        {
+            "filename": "r1_routes.PNG",
+            "caption": "r1 routes"
+        },
+        {
+            "filename": "r2_cmds.PNG",
+            "caption": "r2 cmds"
+        },
+        {
+            "filename": "r3_routes.PNG",
+            "caption": "r3 routes"
         }
     ],
     "dynamic_nat": [
@@ -501,6 +525,24 @@
         {
             "filename": "topology.PNG",
             "caption": "topology"
+        }
+    ],
+    "tftp": [
+        {
+            "filename": "delete.PNG",
+            "caption": "delete"
+        },
+        {
+            "filename": "reload.PNG",
+            "caption": "reload"
+        },
+        {
+            "filename": "server_tftp.PNG",
+            "caption": "server tftp"
+        },
+        {
+            "filename": "tftf_to_flash.PNG",
+            "caption": "tftf to flash"
         }
     ]
 }

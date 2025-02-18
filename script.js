@@ -113,7 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Refresh Fancybox
         $('[data-fancybox="gallery"]').fancybox({
             loop: true,
-            buttons: ["zoom", "close"],
         });
     }
 
