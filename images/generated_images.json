@@ -81,6 +81,44 @@
             "caption": "server services"
         }
     ],
+    "dual_stack": [
+        {
+            "filename": "pc0.PNG",
+            "caption": "pc0"
+        },
+        {
+            "filename": "pc3.PNG",
+            "caption": "pc3"
+        },
+        {
+            "filename": "r1_autoconfig.PNG",
+            "caption": "r1 autoconfig"
+        },
+        {
+            "filename": "r1_setup_rip_v6.PNG",
+            "caption": "r1 setup rip v6"
+        },
+        {
+            "filename": "r2_setup.PNG",
+            "caption": "r2 setup"
+        },
+        {
+            "filename": "r3_ipv6_route.PNG",
+            "caption": "r3 ipv6 route"
+        },
+        {
+            "filename": "r3_ip_route.PNG",
+            "caption": "r3 ip route"
+        },
+        {
+            "filename": "r3_setup.PNG",
+            "caption": "r3 setup"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
     "dynamic_nat": [
         {
             "filename": "isp_show_run.PNG",

@@ -1,7 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
     const gallery = document.getElementById('imageGallery');
     const sidebarMenu = document.getElementById('sidebarMenu');
-
+    const networkIcons = [
+        'fa-network-wired',
+        'fa-server',
+        'fa-laptop',
+        'fa-satellite-dish',
+        'fa-cloud',
+        'fa-ethernet',
+        'fa-route',
+        'fa-wifi',
+        'fa-globe',
+        'fa-hdd',
+        'fa-database',
+        'fa-link'
+    ];
+    
     const topics = {
         'static': 'Static Route',
         'default': 'Default Route',
@@ -38,36 +52,41 @@ document.addEventListener('DOMContentLoaded', function () {
             navPills.className = 'nav nav-pills flex-column';
 
             Object.keys(data).forEach((topic, index) => {
-                const listItem = document.createElement('li');
-                listItem.className = 'nav-item';
-
                 const link = document.createElement('a');
                 link.href = '#';
-                link.textContent = topics[topic] || topic.replace('_', ' ');
                 link.className = 'nav-link';
-
-                // Add click event for active state
+                link.textContent = topics[topic] || topic.replace('_', ' ');
+            
+                // Assign random icon
+                const icon = document.createElement('i');
+                icon.className = `fas ${networkIcons[Math.floor(Math.random() * networkIcons.length)]} me-2`;
+            
+                // Clear text content and prepend icon
+                link.textContent = '';
+                link.appendChild(icon);
+                link.appendChild(document.createTextNode(topics[topic] || topic.replace('_', ' ')));
+            
+                link.addEventListener('click', () => loadImages(data, topic));
+                sidebarMenu.appendChild(link);
+              // Add click event for active state
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
                     loadImages(data, topic);
                     setActiveLink(link);
                 });
-
-                // If it's the first topic, set the active class
+    
                 if (index === 0) {
-                    link.classList.add('active');
+                    link.classList.add('active'); // Set first topic as active by default
                 }
-
-                listItem.appendChild(link);
-                navPills.appendChild(listItem);
             });
-
             sidebarMenu.appendChild(navPills);
 
             // Load first topic by default
             const firstTopic = Object.keys(data)[0];
             if (firstTopic) loadImages(data, firstTopic);
         });
+    
+        
 
     function loadImages(data, topic) {
         gallery.innerHTML = '';

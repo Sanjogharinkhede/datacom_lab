@@ -1,6 +1,7 @@
 body {
     background-color: #f4f4f9;
     font-family: 'Arial', sans-serif;
+    font-variant: small-caps;
 }
 .sidebar {
     height: 100vh;
@@ -44,6 +45,25 @@ body {
     background-color: #1abc9c;
     font-weight: bold;
 }
+
+.sidebar a {
+    font-size: 14px !important ;/* Smaller text */
+    padding: 6px 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+}
+
+.sidebar i {
+    font-size: 16px !important; /* Icon size */
+}
+
+.sidebar a.active {
+    background-color: #17a2b8;
+    color: white;
+    border-radius: 5px;
+}
+
 .content {
     margin-left: 270px;
     padding: 20px;
