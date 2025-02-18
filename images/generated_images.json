@@ -1,0 +1,468 @@
+{
+    "bgp": [
+        {
+            "filename": "r1_show_run.PNG",
+            "caption": "r1 show run"
+        },
+        {
+            "filename": "r2_show_run.PNG",
+            "caption": "r2 show run"
+        },
+        {
+            "filename": "r3_bgp.PNG",
+            "caption": "r3 bgp"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
+    "cdp": [
+        {
+            "filename": "cdp_interface_2.PNG",
+            "caption": "cdp interface 2"
+        },
+        {
+            "filename": "r1_cdp run.PNG",
+            "caption": "r1 cdp run"
+        },
+        {
+            "filename": "r1_cdp_interface_and_neighbor.PNG",
+            "caption": "r1 cdp interface and neighbor"
+        }
+    ],
+    "default": [
+        {
+            "filename": "default route.PNG",
+            "caption": "default route"
+        },
+        {
+            "filename": "default_route_r2.PNG",
+            "caption": "default route r2"
+        },
+        {
+            "filename": "default_route_r3.PNG",
+            "caption": "default route r3"
+        },
+        {
+            "filename": "topology for default route.PNG",
+            "caption": "topology for default route"
+        }
+    ],
+    "dhcp": [
+        {
+            "filename": "dhcp_cmd.PNG",
+            "caption": "dhcp cmd"
+        },
+        {
+            "filename": "dhcp_pc.PNG",
+            "caption": "dhcp pc"
+        }
+    ],
+    "dhcp_relay": [
+        {
+            "filename": "pc0.PNG",
+            "caption": "pc0"
+        },
+        {
+            "filename": "pc2.PNG",
+            "caption": "pc2"
+        },
+        {
+            "filename": "r1_cmds_to_conf_relay.PNG",
+            "caption": "r1 cmds to conf relay"
+        },
+        {
+            "filename": "server_desktop.PNG",
+            "caption": "server desktop"
+        },
+        {
+            "filename": "server_services.PNG",
+            "caption": "server services"
+        }
+    ],
+    "dynamic_nat": [
+        {
+            "filename": "isp_show_run.PNG",
+            "caption": "isp show run"
+        },
+        {
+            "filename": "r1_show_run.PNG",
+            "caption": "r1 show run"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
+    "ebgp": [
+        {
+            "filename": "r1_show_run.PNG",
+            "caption": "r1 show run"
+        },
+        {
+            "filename": "r2_show_run.PNG",
+            "caption": "r2 show run"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
+    "eigrp": [
+        {
+            "filename": "r1_eigrp.PNG",
+            "caption": "r1 eigrp"
+        },
+        {
+            "filename": "r2_eigrp_protocols.PNG",
+            "caption": "r2 eigrp protocols"
+        },
+        {
+            "filename": "r3_eigrp_verify.PNG",
+            "caption": "r3 eigrp verify"
+        },
+        {
+            "filename": "r3_table.PNG",
+            "caption": "r3 table"
+        },
+        {
+            "filename": "traceroute.PNG",
+            "caption": "traceroute"
+        }
+    ],
+    "floating_route": [
+        {
+            "filename": "r1_config_floating_by_AD.PNG",
+            "caption": "r1 config floating by AD"
+        },
+        {
+            "filename": "r1_config_floating_by_AD_shut_osrf_and_verify.PNG",
+            "caption": "r1 config floating by AD shut osrf and verify"
+        },
+        {
+            "filename": "r1_config_floating_by_AD_trace.PNG",
+            "caption": "r1 config floating by AD trace"
+        },
+        {
+            "filename": "r1_static_conf.PNG",
+            "caption": "r1 static conf"
+        },
+        {
+            "filename": "r3_config_floating.PNG",
+            "caption": "r3 config floating"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
+    "gre": [
+        {
+            "filename": "r1_show_run.PNG",
+            "caption": "r1 show run"
+        },
+        {
+            "filename": "r2_show_run.PNG",
+            "caption": "r2 show run"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
+    "hsrp": [
+        {
+            "filename": "r1_eigrp.PNG",
+            "caption": "r1 eigrp"
+        },
+        {
+            "filename": "r1_hsrp_config.PNG",
+            "caption": "r1 hsrp config"
+        },
+        {
+            "filename": "r2_eigrp.PNG",
+            "caption": "r2 eigrp"
+        },
+        {
+            "filename": "r2_hsrp_config.PNG",
+            "caption": "r2 hsrp config"
+        },
+        {
+            "filename": "r3_loopback_and_interfaces.PNG",
+            "caption": "r3 loopback and interfaces"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
+    "ipv6": [
+        {
+            "filename": "ipv6.PNG",
+            "caption": "ipv6"
+        },
+        {
+            "filename": "ping_r2_to_r1.PNG",
+            "caption": "ping r2 to r1"
+        },
+        {
+            "filename": "r1_setup.PNG",
+            "caption": "r1 setup"
+        }
+    ],
+    "mlppp": [
+        {
+            "filename": "r1_brief_and_interface.PNG",
+            "caption": "r1 brief and interface"
+        },
+        {
+            "filename": "r1_cmds.PNG",
+            "caption": "r1 cmds"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
+    "multilink": [
+        {
+            "filename": "multilink_r1_inactive.PNG",
+            "caption": "multilink r1 inactive"
+        },
+        {
+            "filename": "multilink_r2.PNG",
+            "caption": "multilink r2"
+        },
+        {
+            "filename": "multilink_r2_final.PNG",
+            "caption": "multilink r2 final"
+        }
+    ],
+    "ospf": [
+        {
+            "filename": "r1_routing.PNG",
+            "caption": "r1 routing"
+        },
+        {
+            "filename": "r2_ospf_interface_fa0_1.PNG",
+            "caption": "r2 ospf interface fa0 1"
+        },
+        {
+            "filename": "r2_ospf_verify.PNG",
+            "caption": "r2 ospf verify"
+        },
+        {
+            "filename": "r3_protocols_and_routing_table.PNG",
+            "caption": "r3 protocols and routing table"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
+    "ospf_mul": [
+        {
+            "filename": "r1_route_table_and_protocol.PNG",
+            "caption": "r1 route table and protocol"
+        },
+        {
+            "filename": "r2_database.PNG",
+            "caption": "r2 database"
+        },
+        {
+            "filename": "r3_verify.PNG",
+            "caption": "r3 verify"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
+    "password banner etcs": [
+        {
+            "filename": "banner.PNG",
+            "caption": "banner"
+        },
+        {
+            "filename": "password and secret.PNG",
+            "caption": "password and secret"
+        },
+        {
+            "filename": "service_password_encr.PNG",
+            "caption": "service password encr"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        },
+        {
+            "filename": "user_access_pass.PNG",
+            "caption": "user access pass"
+        }
+    ],
+    "pat": [
+        {
+            "filename": "isp_show_run.PNG",
+            "caption": "isp show run"
+        },
+        {
+            "filename": "r1_show_run.PNG",
+            "caption": "r1 show run"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
+    "ping_tracert": [
+        {
+            "filename": "cmd.PNG",
+            "caption": "cmd"
+        }
+    ],
+    "ppp_chap": [
+        {
+            "filename": "r1_show_run.PNG",
+            "caption": "r1 show run"
+        },
+        {
+            "filename": "r2_show_run.PNG",
+            "caption": "r2 show run"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
+    "ppp_pap": [
+        {
+            "filename": "ppp_pap.PNG",
+            "caption": "ppp pap"
+        },
+        {
+            "filename": "ppp_pap_r1.PNG",
+            "caption": "ppp pap r1"
+        },
+        {
+            "filename": "r1_pap_show_run.PNG",
+            "caption": "r1 pap show run"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
+    "ripv2": [
+        {
+            "filename": "eigrp.PNG",
+            "caption": "eigrp"
+        },
+        {
+            "filename": "r1_ip_route_and_ping.PNG",
+            "caption": "r1 ip route and ping"
+        },
+        {
+            "filename": "r1_protocol_and_config.PNG",
+            "caption": "r1 protocol and config"
+        },
+        {
+            "filename": "r2_database_and_table.PNG",
+            "caption": "r2 database and table"
+        },
+        {
+            "filename": "r3.PNG",
+            "caption": "r3"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
+    "ssh": [
+        {
+            "filename": "r1_setup.PNG",
+            "caption": "r1 setup"
+        },
+        {
+            "filename": "r1_setup_2.PNG",
+            "caption": "r1 setup 2"
+        },
+        {
+            "filename": "r2_remote_to_r1.PNG",
+            "caption": "r2 remote to r1"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
+    "static": [
+        {
+            "filename": "ping_from_pc4_to_pc1.PNG",
+            "caption": "ping from pc4 to pc1"
+        },
+        {
+            "filename": "r1_route_table.PNG",
+            "caption": "r1 route table"
+        },
+        {
+            "filename": "r2_route_table.PNG",
+            "caption": "r2 route table"
+        },
+        {
+            "filename": "r3_routing table.PNG",
+            "caption": "r3 routing table"
+        },
+        {
+            "filename": "static_route_topology.PNG",
+            "caption": "static route topology"
+        }
+    ],
+    "static_nat": [
+        {
+            "filename": "isp_show_run.PNG",
+            "caption": "isp show run"
+        },
+        {
+            "filename": "route_show_run.PNG",
+            "caption": "route show run"
+        },
+        {
+            "filename": "totpology.PNG",
+            "caption": "totpology"
+        }
+    ],
+    "syslog": [
+        {
+            "filename": "logs.png",
+            "caption": "logs"
+        },
+        {
+            "filename": "r1_config.PNG",
+            "caption": "r1 config"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ],
+    "telnet": [
+        {
+            "filename": "r1_remote_telnet_to_r2_with_pass.PNG",
+            "caption": "r1 remote telnet to r2 with pass"
+        },
+        {
+            "filename": "r2_config_telnet.PNG",
+            "caption": "r2 config telnet"
+        },
+        {
+            "filename": "r2_line_vty_show_run_and_tcp_bri.PNG",
+            "caption": "r2 line vty show run and tcp bri"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
+        }
+    ]
+}
