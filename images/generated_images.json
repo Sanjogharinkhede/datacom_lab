@@ -301,6 +301,62 @@
             "caption": "multilink r2 final"
         }
     ],
+    "Netconf": [
+        {
+            "filename": "get_interface_list file 2.PNG",
+            "caption": "get interface list file 2"
+        },
+        {
+            "filename": "get_interface_list file.PNG",
+            "caption": "get interface list file"
+        },
+        {
+            "filename": "nect to the Sandbox IOS-XE router using SSH.PNG",
+            "caption": "nect to the Sandbox IOS-XE router using SSH"
+        },
+        {
+            "filename": "prep-py-editor.PNG",
+            "caption": "prep-py-editor"
+        },
+        {
+            "filename": "prep-py.PNG",
+            "caption": "prep-py"
+        },
+        {
+            "filename": "run get_interface_list interfaces.PNG",
+            "caption": "run get interface list interfaces"
+        },
+        {
+            "filename": "run get_interface_list.PNG",
+            "caption": "run get interface list"
+        }
+    ],
+    "New folder": [
+        {
+            "filename": "r1_access_list.PNG",
+            "caption": "r1 access list"
+        },
+        {
+            "filename": "r1_config_iskamp.PNG",
+            "caption": "r1 config iskamp"
+        },
+        {
+            "filename": "r1_crypto_map.PNG",
+            "caption": "r1 crypto map"
+        },
+        {
+            "filename": "r1_history.PNG",
+            "caption": "r1 history"
+        },
+        {
+            "filename": "r1_ipsec_config.PNG",
+            "caption": "r1 ipsec config"
+        },
+        {
+            "filename": "r1_isakmp_key.PNG",
+            "caption": "r1 isakmp key"
+        }
+    ],
     "ospf": [
         {
             "filename": "r1_routing.PNG",
@@ -415,6 +471,50 @@
             "caption": "topology"
         }
     ],
+    "redistribute": [
+        {
+            "filename": "r1_config.PNG",
+            "caption": "r1 config"
+        },
+        {
+            "filename": "r1_ip_route_before_redistribute.PNG",
+            "caption": "r1 ip route before redistribute"
+        },
+        {
+            "filename": "r1_route_after_redistribute.PNG",
+            "caption": "r1 route after redistribute"
+        },
+        {
+            "filename": "r2_config.PNG",
+            "caption": "r2 config"
+        },
+        {
+            "filename": "r3_routes_before_redistribute.PNG",
+            "caption": "r3 routes before redistribute"
+        }
+    ],
+    "reset_pass": [
+        {
+            "filename": "after_reset_to_get_back.PNG",
+            "caption": "after reset to get back"
+        },
+        {
+            "filename": "back_to_older_config_and_show_run_1.PNG",
+            "caption": "back to older config and show run 1"
+        },
+        {
+            "filename": "back_to_older_config_and_show_run_2.PNG",
+            "caption": "back to older config and show run 2"
+        },
+        {
+            "filename": "config_register_after_removing_password.PNG",
+            "caption": "config register after removing password"
+        },
+        {
+            "filename": "rommon_mode.PNG",
+            "caption": "rommon mode"
+        }
+    ],
     "ripv2": [
         {
             "filename": "eigrp.PNG",
@@ -493,6 +593,28 @@
         {
             "filename": "totpology.PNG",
             "caption": "totpology"
+        }
+    ],
+    "switch": [
+        {
+            "filename": "multilayer_switch.PNG",
+            "caption": "multilayer switch"
+        },
+        {
+            "filename": "multilayer_switch_config.PNG",
+            "caption": "multilayer switch config"
+        },
+        {
+            "filename": "multilayer_switch_version.PNG",
+            "caption": "multilayer switch version"
+        },
+        {
+            "filename": "switch_try.PNG",
+            "caption": "switch try"
+        },
+        {
+            "filename": "topology.PNG",
+            "caption": "topology"
         }
     ],
     "syslog": [

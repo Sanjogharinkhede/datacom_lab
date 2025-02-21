@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     const topics = {
         'static': 'Static Route',
+        'dual_stack': 'Dual stack & IPv6 Address Configuration',
         'default': 'Default Route',
         'ripv2': 'RIPv2',
         'eigrp': 'EIGRP',
@@ -32,12 +33,12 @@ document.addEventListener('DOMContentLoaded', function () {
         'mlppp': 'MLPPP',
         'gre': 'GRE',
         'ebgp': 'eBGP & Network Statement',
-        'bgp': 'iBGP',
+        'bgp': 'IBGP',
         'hsrp': 'HSRP',
         'password_banner': 'Enable Password, Secret, Banner',
         'telnet': 'Telnet',
         'ssh': 'SSH',
-        'ipv6': 'IPv6 Address Configuration, IPv6 AutoConfiguration (SLAAC), IPv6 Address Allocation',
+        'ipv6': 'IPv6 AutoConfiguration (SLAAC), IPv6 Address Allocation',
         'cdp': 'CDP',
         'floating_route': 'Floating Static Route',
         'syslog': 'Syslog',
