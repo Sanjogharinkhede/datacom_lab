@@ -259,6 +259,32 @@
             "caption": "topology"
         }
     ],
+    "ipsec": [
+        {
+            "filename": "r1_access_list.PNG",
+            "caption": "r1 access list"
+        },
+        {
+            "filename": "r1_config_iskamp.PNG",
+            "caption": "r1 config iskamp"
+        },
+        {
+            "filename": "r1_crypto_map.PNG",
+            "caption": "r1 crypto map"
+        },
+        {
+            "filename": "r1_history.PNG",
+            "caption": "r1 history"
+        },
+        {
+            "filename": "r1_ipsec_config.PNG",
+            "caption": "r1 ipsec config"
+        },
+        {
+            "filename": "r1_isakmp_key.PNG",
+            "caption": "r1 isakmp key"
+        }
+    ],
     "ipv6": [
         {
             "filename": "ipv6.PNG",
@@ -329,32 +355,10 @@
         {
             "filename": "run get_interface_list.PNG",
             "caption": "run get interface list"
-        }
-    ],
-    "New folder": [
-        {
-            "filename": "r1_access_list.PNG",
-            "caption": "r1 access list"
         },
         {
-            "filename": "r1_config_iskamp.PNG",
-            "caption": "r1 config iskamp"
-        },
-        {
-            "filename": "r1_crypto_map.PNG",
-            "caption": "r1 crypto map"
-        },
-        {
-            "filename": "r1_history.PNG",
-            "caption": "r1 history"
-        },
-        {
-            "filename": "r1_ipsec_config.PNG",
-            "caption": "r1 ipsec config"
-        },
-        {
-            "filename": "r1_isakmp_key.PNG",
-            "caption": "r1 isakmp key"
+            "filename": "save_config.PNG",
+            "caption": "save config"
         }
     ],
     "ospf": [
@@ -513,6 +517,92 @@
         {
             "filename": "rommon_mode.PNG",
             "caption": "rommon mode"
+        }
+    ],
+    "Restconf": [
+        {
+            "filename": "1 env variables.PNG",
+            "caption": "1 env variables"
+        },
+        {
+            "filename": "10 update existing loopback.PNG",
+            "caption": "10 update existing loopback"
+        },
+        {
+            "filename": "11 delete existing loopback.PNG",
+            "caption": "11 delete existing loopback"
+        },
+        {
+            "filename": "12 save congi.PNG",
+            "caption": "12 save congi"
+        },
+        {
+            "filename": "13 ietf netconf monitoring capabilities.PNG",
+            "caption": "13 ietf netconf monitoring capabilities"
+        },
+        {
+            "filename": "13 ietf-restconf-monitoring capabilities.PNG",
+            "caption": "13 ietf-restconf-monitoring capabilities"
+        },
+        {
+            "filename": "14 get native device loopback.PNG",
+            "caption": "14 get native device loopback"
+        },
+        {
+            "filename": "15 get all interfaces state.PNG",
+            "caption": "15 get all interfaces state"
+        },
+        {
+            "filename": "16 get hostname of native device.PNG",
+            "caption": "16 get hostname of native device"
+        },
+        {
+            "filename": "17 yang modules  state.PNG",
+            "caption": "17 yang modules  state"
+        },
+        {
+            "filename": "18 cisco xe native device info.PNG",
+            "caption": "18 cisco xe native device info"
+        },
+        {
+            "filename": "2. setting header for json.PNG",
+            "caption": "2. setting header for json"
+        },
+        {
+            "filename": "3. basic Auth.PNG",
+            "caption": "3. basic Auth"
+        },
+        {
+            "filename": "4 top level resource.PNG",
+            "caption": "4 top level resource"
+        },
+        {
+            "filename": "5 top level restconf.PNG",
+            "caption": "5 top level restconf"
+        },
+        {
+            "filename": "6 get all interfaces.PNG",
+            "caption": "6 get all interfaces"
+        },
+        {
+            "filename": "7 get single interface.PNG",
+            "caption": "7 get single interface"
+        },
+        {
+            "filename": "8 get fields from  interfaces.PNG",
+            "caption": "8 get fields from  interfaces"
+        },
+        {
+            "filename": "9 create interface.PNG",
+            "caption": "9 create interface"
+        },
+        {
+            "filename": "Collection_Runner_1.PNG",
+            "caption": "Collection Runner 1"
+        },
+        {
+            "filename": "Collection_Runner_2.PNG",
+            "caption": "Collection Runner 2"
         }
     ],
     "ripv2": [
