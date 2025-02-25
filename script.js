@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         'fa-link'
     ];
 
-    // Human-friendly names for topics
+    // Topics as per named
     const topicNames = {
         'static': 'Static Route',
         'dual_stack': 'Dual stack & IPv6 Address Configuration',
@@ -47,28 +47,29 @@ document.addEventListener('DOMContentLoaded', async function () {
         'dhcp_relay': 'DHCP Relay Agent'
     };
 
-    // Fetch Image Data (dynamic structure)
+    // Fetch json created with python for images
     const data = await fetch('images/generated_images.json').then(res => res.json());
     console.log(data);
     
-    // Dynamically build sidebar
+    //build sidebar
     sidebarMenu.innerHTML = '';
     await buildDynamicSidebar(data);
 
-    // Automatically load the first NMS topic by default
+    // load first topic when enter to page
     const firstTopic = Object.keys(data.NMS)[0];
     if (firstTopic) loadImages(data, 'NMS', firstTopic);
 
     /**
-     * Dynamically create collapsible sidebar sections
+     * A collapsible sidebar build for multiple lab topics
      * @param {Object} data - Folder structure from JSON
      */
-    function buildDynamicSidebar(data) {
-        // Ensure NMS comes first
+    async function buildDynamicSidebar(data) {
+        // Ensure NMS comes first then Datacom
         ['NMS', 'Datacom'].forEach((category, index) => {
             if (data[category]) {
+                // Call to create collapsible section
                 createCollapsibleSection(
-                    category.toUpperCase(),
+                    category.toUpperCase(), 
                     data[category],
                     category === 'NMS',
                     category
@@ -78,11 +79,13 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     /**
+     * ChatGpt generated
+     * 
      * Create a collapsible section in the sidebar
-     * @param {string} title - Section title (e.g., "NMS")
+     * @param {string} title - Section title say NMS
      * @param {Object} topics - Topics under this section
      * @param {boolean} openByDefault - Whether section should be open initially
-     * @param {string} category - Category (e.g., "nms" or "datacom")
+     * @param {string} category - Category like nms
      */
     function createCollapsibleSection(title, topics, openByDefault, category) {
         const section = document.createElement('div');

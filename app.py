@@ -1,63 +1,36 @@
-# import os
-# import json
-
-# base_path = 'images'
-# output_file = os.path.join(base_path, 'generated_images.json')
-
-# data = {}
-
-# # Loop through topic folders like 'static', 'ripv2'
-# for topic in os.listdir(base_path):
-#     topic_path = os.path.join(base_path, topic)
-    
-#     if not os.path.isdir(topic_path):
-#         continue  # Skip files like generated_images.json if present
-
-#     images = []
-#     for file in os.listdir(topic_path):
-#         if file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif')):
-#             caption = os.path.splitext(file)[0].replace('_', ' ')
-#             images.append({"filename": file, "caption": caption})
-
-#     data[topic] = images
-
-# # Write JSON to file
-# with open(output_file, 'w', encoding='utf-8') as f:
-#     json.dump(data, f, ensure_ascii=False, indent=4)
-
-# print(f"Image data exported to {output_file}")
-
-
 import os
 import json
 
-# Base directory where images are stored
+# Base paths constants
 BASE_PATH = 'images'
 OUTPUT_FILE = os.path.join(BASE_PATH, 'generated_images.json')
 
+
+# scan and generate a dict/json
 def scan_images():
     data = {}
 
-    # Scan primary folders (e.g., nms, datacom)
+    # Scan primary folders 
     for category in os.listdir(BASE_PATH):
+        # Add to base path with primary folder
         category_path = os.path.join(BASE_PATH, category)
 
-        # Ensure it's a directory (ignore files like generated_images.json)
+        # Ensure it's a directory and ignore any other png or json
         if not os.path.isdir(category_path):
             continue
 
-        # Create an entry for each category (nms/datacom)
+       
         data[category] = {}
 
-        # Scan subfolders for topics
+        # Scan subfolders inside primary folder dir like nms etc
         for topic in os.listdir(category_path):
+            # Each topic in folder nms  or datacom
             topic_path = os.path.join(category_path, topic)
 
-            # Ensure it's a valid directory
             if not os.path.isdir(topic_path):
                 continue
 
-            # Gather images from each topic folder
+            # Gather images from each folder like from ospf, dual stack
             images = [
                 {
                     "filename": file,
@@ -67,17 +40,20 @@ def scan_images():
                 if file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif'))
             ]
 
-            # Only store non-empty topics
+            # if there are image then add to topic on json
             if images:
                 data[category][topic] = images
-
+    # print(data)
     return data
 
+# create a pretty json file 
 def save_json(data, output_file):
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     print(f" Image data exported to {output_file}")
 
+
+# on executing
 if __name__ == "__main__":
     image_data = scan_images()
     save_json(image_data, OUTPUT_FILE)
