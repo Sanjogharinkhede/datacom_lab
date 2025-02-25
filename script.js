@@ -161,7 +161,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             gallery.appendChild(card);
         });
 
-        Fancybox.bind('[data-fancybox]', {});
+        $('[data-fancybox="gallery"]').fancybox({
+            loop: true,
+        });
     }
 
     /**
