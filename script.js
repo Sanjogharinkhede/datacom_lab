@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         'mlppp': 'MLPPP',
         'gre': 'GRE',
         'ebgp': 'eBGP & Network Statement',
-        'bgp': 'IBGP',
+        'ibgp': 'Internal BGP',
         'hsrp': 'HSRP',
         'password_banner': 'Enable Password, Secret, Banner',
         'telnet': 'Telnet',

@@ -1,23 +1,5 @@
 {
     "Datacom": {
-        "bgp": [
-            {
-                "filename": "r1_show_run.PNG",
-                "caption": "r1 show run"
-            },
-            {
-                "filename": "r2_show_run.PNG",
-                "caption": "r2 show run"
-            },
-            {
-                "filename": "r3_bgp.PNG",
-                "caption": "r3 bgp"
-            },
-            {
-                "filename": "topology.PNG",
-                "caption": "topology"
-            }
-        ],
         "cdp": [
             {
                 "filename": "cdp_interface_2.PNG",
@@ -254,6 +236,24 @@
             {
                 "filename": "r3_loopback_and_interfaces.PNG",
                 "caption": "r3 loopback and interfaces"
+            },
+            {
+                "filename": "topology.PNG",
+                "caption": "topology"
+            }
+        ],
+        "ibgp": [
+            {
+                "filename": "r1_show_run.PNG",
+                "caption": "r1 show run"
+            },
+            {
+                "filename": "r2_show_run.PNG",
+                "caption": "r2 show run"
+            },
+            {
+                "filename": "r3_bgp.PNG",
+                "caption": "r3 bgp"
             },
             {
                 "filename": "topology.PNG",
