@@ -75,7 +75,23 @@ body {
     color: white;
     border-radius: 5px;
 }
-
+.sidebar-section {
+    margin-bottom: 12px;
+}
+.sidebar-title {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar-content {
+    padding-left: 15px;
+}
 .content {
     margin-left: 270px;
     padding: 20px;
