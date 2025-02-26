@@ -1,0 +1,16 @@
+{
+    "title": "OSPF (Open Shortest Path First)",
+    "tagline": "Link-state routing protocol for scalable IP networks.",
+    "description": "OSPF is a link-state routing protocol used in large IP networks. It dynamically updates routing tables based on network topology changes.",
+    "advantages": [
+      "Faster convergence due to link-state algorithm.",
+      "Scales well for large, complex networks.",
+      "Supports load balancing and multiple paths."
+    ],
+    "disadvantages": [
+      "Complex to configure and maintain.",
+      "Higher CPU and memory usage.",
+      "Requires frequent synchronization."
+    ]
+  }
+  

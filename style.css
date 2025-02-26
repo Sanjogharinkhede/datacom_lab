@@ -1,160 +1,587 @@
+/* Body */
 body {
-    background-color: #f4f4f9;
-    font-family: 'Arial', sans-serif;
-    font-variant: small-caps;
+  background: linear-gradient(135deg, #e0e7ff, #d1d8e0);
+  font-family: "Arial", sans-serif;
+  font-variant: small-caps;
+  color: #2d3436;
+  margin: 0;
+  padding: 0;
+  /* padding-bottom: 80px; Space for footer */
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+/* Techy Background Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="none" stroke="rgba(52, 152, 219, 0.1)" stroke-width="0.5" d="M0 50 H100 M50 0 V100 M25 25 L75 75 M75 25 L25 75"/></svg>')
+    repeat;
+  z-index: -1; /* Behind content */
 }
 
+/* Sidebar */
 .sidebar {
-    height: 95vh;
-    width: 250px;
-    background: linear-gradient(to right, #666666, #3d3c3c);
-    color: wheat;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-top: 20px;
-    border-radius: 0 15px 15px 0;
-    overflow-y: auto;
+  height: 100vh;
+  width: 250px;
+  background: linear-gradient(to bottom, #2d3436, #1e272e);
+  color: wheat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-radius: 0 20px 20px 0;
+  overflow-y: auto;
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* Above footer */
 }
-.view-count{
-    position: fixed;
-    top: 0;
-    right: 0;
+
+.view-count {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(52, 152, 219, 0.8);
+  padding: 5px 10px;
+  border-radius: 0 0 0 10px;
+  color: #fff;
 }
 
 .sidebar h4 {
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 5px;
-    border-radius: 20%;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 8px;
+  border-radius: 25%;
+  background: rgba(52, 152, 219, 0.2); /* Subtle cyan accent */
+  color: #3498db;
 }
 
 .sidebar .nav-pills {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .sidebar .nav-item {
-    width: 100%;
+  width: 100%;
 }
 
 .sidebar .nav-link {
-    color: wheat;
-    text-decoration: none;
-    display: block;
-    padding: 12px 20px;
-    border-radius: 30px;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease, padding-left 0.3s ease, color 0.3s ease;
+  color: wheat; /* Matches sidebar */
+  text-decoration: none;
+  display: block;
+  padding: 8px 16px; /* Reduced padding for more visibility */
+  border-radius: 30px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 4px 8px; /* Added margin to prevent overlap */
 }
 
 .sidebar .nav-link:hover {
-    background-color: #34495e;
+  background-color: #0984e3; /* Slightly darker blue for hover */
+  color: #fff;
 }
 
 .sidebar .nav-link.active {
-    background-color: #1abc9c;
-    font-weight: bold;
+  background-color: #00b894; /* Fresh green for active */
+  font-weight: bold;
+  color: #fff;
 }
 
 .sidebar a {
-    font-size: 14px !important;
-    padding: 6px 8px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  font-size: 14px !important;
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .sidebar i {
-    font-size: 16px !important;
+  font-size: 16px !important;
 }
 
 .sidebar a.active {
-    background-color: #17a2b8;
-    color: white;
-    border-radius: 5px;
+  background-color: #00b894;
+  color: white;
+  border-radius: 5px;
 }
+
 .sidebar-section {
-    margin-bottom: 12px;
+  margin-bottom: 16px; /* Increased margin for separation */
 }
+
 .sidebar-title {
-    font-weight: bold;
-    cursor: pointer;
-    padding: 8px 10px;
-    border-radius: 5px;
-    background: #2c3e50;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 6px 10px; /* Reduced padding for compactness */
+  border-radius: 25px; /* Pill shape */
+  background: linear-gradient(
+    17deg,
+    transparent,
+    #0dcaf0
+  ); /* Subtle gradient */
+  color: #fff; /* White for contrast on gradient */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin: 8px 8px 0; /* Added margin to top and sides */
 }
+
+.sidebar-title:hover {
+  transform: scale(1.02); /* Subtle hover effect */
+  background-color: #0dcaf0; /* Solid cyan on hover */
+}
+
 .sidebar-content {
-    padding-left: 15px;
-}
-.content {
-    margin-left: 270px;
-    padding: 20px;
-}
-
-.card {
-    margin-bottom: 20px;
-    position: relative;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card-img-top {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    transition: opacity 0.3s ease;
-}
-
-.card-img-top:hover::after {
-    content: "Click to view full image";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    border-radius: 5px;
-    z-index: 1;
+  padding-left: 15px;
+  margin-top: 8px; /* Added margin to separate from title */
 }
 
 /* Custom Scrollbar */
 .sidebar::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-    background-color: #1abc9c;
-    border-radius: 4px;
+  background-color: #00b894; /* Match active color */
+  border-radius: 4px;
 }
 
 .sidebar::-webkit-scrollbar-track {
-    background-color: #3d3c3c;
+  background-color: #1e272e;
 }
 
+/* Content */
+.content {
+  margin-left: 270px;
+  padding: 25px;
+  overflow: hidden; /* Contain animations */
+}
+/* Topic Header */
+.topic-header {
+  background: repeating-linear-gradient(135deg, #5656a3, #174f17 1px);
+  color: wheat; /* Softer off-white */
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 35px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  opacity: 0; /* Start hidden for animation */
+  transform: translateY(20px); /* Start slightly below */
+  animation: slideIn 0.5s ease-out forwards; /* Animate in */
+  font-variant: normal;
+}
 
+.topic-header h2 {
+  font-size: 1.5rem;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+  color: #ffdd57; /* Bright yellow for standout */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.topic-header .description,.topic-header .feature {
+  font-size: 0.9rem;
+  margin: 0 0 20px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.topic-header:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent);
+  animation: pulse 10s infinite;
+  z-index: 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}
+
+.topic-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pros-cons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.benefits,
+.disadvantages {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+.benefits h5,
+.feature h5,
+.disadvantages h5 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: #feca57; /* Warm yellow */
+}
+
+.benefits ul,
+.disadvantages ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits li,
+.disadvantages li {
+  margin: 5px 0;
+  padding-left: 20px;
+  position: relative;
+  font-size: .75rem;
+}
+
+.benefits li:before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #55efc4; /* Bright green */
+}
+
+.disadvantages li:before {
+  content: "✖";
+  position: absolute;
+  left: 0;
+  color: #ff7675; /* Soft red */
+}
+
+.commands {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  border-radius: 12px;
+  border-left: 5px solid #e17055; /* Warm peach */
+}
+
+.commands h5 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: #feca57;
+}
+
+.commands pre {
+  background: #000;
+  color: #dfe6e9;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: "Courier New", monospace;
+  white-space: pre-wrap;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Gallery Cards - Modernized */
+.card {
+  margin-bottom: 25px;
+  position: relative;
+  background: repeating-linear-gradient(
+    25deg,
+    black,
+    transparent 1px
+  ); /* Your change */
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0; /* Start hidden */
+  transform: translateY(30px); /* Start below */
+  animation: fadeSlideIn 0.6s ease-out forwards; /* Animate in */
+  animation-delay: calc(0.1s * var(--card-index)); /* Staggered entry */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border: none; /* Remove border for a cleaner look */
+  border-radius: 16px 16px 0 0; /* Full top rounding */
+  transition: filter 0.3s ease; /* New animation */
+}
+
+.card-img-top:hover {
+  filter: brightness(1.1) saturate(1.2); /* Enhance image on hover */
+}
+
+.card-img-top:hover::after {
+  content: "View Full Image";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #00b894, #0984e3); /* Gradient overlay */
+  padding: 12px 24px;
+  border-radius: 25px; /* Pill shape */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  transition: opacity 0.3s ease;
+  opacity: 0.9;
+}
+
+.card-img-top:not(:hover)::after {
+  opacity: 0; /* Fade out when not hovered */
+}
+
+/* Modernized Caption */
+.card-body {
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.9); /* Slightly translucent */
+  border-top: 1px solid rgba(0, 0, 0, 0.05); /* Subtle divider */
+}
+
+.card-text {
+  margin: 0;
+  font-size: 1rem;
+  color: #2d3436;
+  font-weight: 500;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 20px; /* Pill shape */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inset shadow for depth */
+  transition: background 0.3s ease;
+}
+
+.card:hover .card-text {
+  background: linear-gradient(
+    to right,
+    #7fdcca,
+    #73bdf5
+  ); /* Matches topic header */
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #dfe6e9, #b2bec3);
+  color: #2d3436;
+  padding: 4px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative; /* Removed fixed-bottom */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+footer .d-flex {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+footer a.text-muted {
+  color: #2d3436;
+  transition: color 0.3s ease;
+}
+
+footer a.text-muted:hover {
+  color: #00b894; /* Green hover to match theme */
+}
+
+footer span.text-muted {
+  font-size: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Better spacing for icons */
+  margin: 0;
+  padding: 0 20px;
+  flex: 1;
+}
+
+footer ul li {
+  display: flex;
+  align-items: center;
+}
+
+footer ul li a {
+  color: #2d3436;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #00b894; /* Green hover */
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+footer ul li i,
+footer ul li img {
+  width: 30px;
+  height: 30px;
+}
 /* Responsive Design */
+@media (max-width: 992px) {
+  /* Tablet */
+  .sidebar {
+    width: 200px;
+  }
+  .content {
+    margin-left: 220px;
+    padding: 20px;
+  }
+  .pros-cons {
+    flex-direction: column;
+  }
+  .card-img-top {
+    height: 280px;
+  }
+  .topic-header {
+    padding: 20px;
+  }
+  .topic-header h2 {
+    font-size: 1.5rem;
+  }
+  footer {
+    flex-direction: column;
+    padding: 2px 0;
+  }
+  footer .d-flex {
+    text-align: center;
+    padding: 10px 0;
+  }
+  footer ul {
+    padding: 2px 0;
+  }
+}
+
 @media (max-width: 768px) {
-    .sidebar {
-        width: 60px;
-    }
-    .sidebar h4, .sidebar .nav-link span {
-        display: none;
-    }
-    .content {
-        margin-left: 80px;
-    }
+  /* Mobile */
+  body {
+    padding-bottom: 100px; /* More space on mobile */
+  }
+  .sidebar {
+    width: 60px;
+    border-radius: 0 15px 15px 0;
+    padding-top: 15px;
+  }
+  .sidebar h4,
+  .sidebar .nav-link span {
+    display: none; /* Icon-only */
+  }
+  .sidebar .nav-link {
+    padding: 8px; /* Match reduced padding */
+    text-align: center;
+    margin: 4px 8px; /* Consistent margin */
+  }
+  .sidebar i {
+    font-size: 1.3rem !important; /* Slightly larger icons */
+  }
+  .content {
+    margin-left: 80px;
+    padding: 5px;
+  }
+  .topic-header {
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .topic-header h2 {
+    font-size: 1.2rem;
+  }
+  .topic-header .description,.feature {
+    font-size: .8rem;
+  }
+  .card-img-top {
+    height: 200px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .card-text {
+    font-size: 0.9rem;
+    padding: 6px 10px; /* Slightly smaller */
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 2px 0;
+  }
+  footer .d-flex {
+    padding: 5px 0;
+  }
+  footer ul {
+    gap: 12px;
+    padding: 2px 0;
+  }
+  footer ul li i,
+  footer ul li img {
+    width: 25px; /* Slightly smaller on mobile */
+    height: 25px;
+  }
+}
+
+/* Animation Keyframes */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -656,16 +656,16 @@
     "NMS": {
         "Netconf": [
             {
+                "filename": "connect to the Sandbox IOS-XE router using SSH.PNG",
+                "caption": "connect to the Sandbox IOS-XE router using SSH"
+            },
+            {
                 "filename": "get_interface_list file 2.PNG",
                 "caption": "get interface list file 2"
             },
             {
                 "filename": "get_interface_list file.PNG",
                 "caption": "get interface list file"
-            },
-            {
-                "filename": "nect to the Sandbox IOS-XE router using SSH.PNG",
-                "caption": "nect to the Sandbox IOS-XE router using SSH"
             },
             {
                 "filename": "prep-py-editor.PNG",
