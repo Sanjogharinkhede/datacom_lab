@@ -796,6 +796,52 @@
                 "caption": "Collection Runner 2"
             }
         ],
+        "SDWAN": [
+            {
+                "filename": "Authentication.PNG",
+                "caption": "Authentication"
+            },
+            {
+                "filename": "Device counters.PNG",
+                "caption": "Device counters"
+            },
+            {
+                "filename": "device Montior.PNG",
+                "caption": "device Montior"
+            },
+            {
+                "filename": "device template feature.PNG",
+                "caption": "device template feature"
+            },
+            {
+                "filename": "Get_fabric_devices.PNG",
+                "caption": "Get fabric devices"
+            },
+            {
+                "filename": "Interface_details.PNG",
+                "caption": "Interface details"
+            },
+            {
+                "filename": "policy list.PNG",
+                "caption": "policy list"
+            },
+            {
+                "filename": "template feature type.PNG",
+                "caption": "template feature type"
+            },
+            {
+                "filename": "token_generation.PNG",
+                "caption": "token generation"
+            },
+            {
+                "filename": "userprofile.PNG",
+                "caption": "userprofile"
+            },
+            {
+                "filename": "vEdge template policy.PNG",
+                "caption": "vEdge template policy"
+            }
+        ],
         "Yang module": [
             {
                 "filename": "1 git clone.PNG",
