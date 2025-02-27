@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     async function loadScript(file) {
         try {
             const response = await fetch(`python_script/${file}`);
+            
             if (!response.ok) throw new Error(`Failed to load ${file}`);
             const code = await response.text();
 
