@@ -1,0 +1,7 @@
+[
+    "connect_with_netmiko.py",
+    "first.py",
+    "Netconf_using_ncclient.py",
+    "snmp_using_easysnmp.py",
+    "snmp_using_pysnmp.py"
+]

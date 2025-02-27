@@ -463,6 +463,132 @@ footer ul li img {
   width: 30px;
   height: 30px;
 }
+
+
+
+/* Add to style.css */
+
+/* Scripts Button in index.html */
+.btn-scripts {
+
+  display: block;
+  padding: 8px 16px;
+  margin: 8px;
+  border-radius: 30px;
+  color: wheat;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-scripts:hover {
+  background-color: #0984e3;
+  color: #fff;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Back Button in scripts.html */
+.btn-back {
+  display: block;
+  padding: 8px 16px;
+  margin: 8px;
+  border-radius: 30px;
+  color: wheat;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #00b894;
+  color: #fff;
+}
+
+
+
+/* Full-screen code content */
+.full-screen-code {
+  margin-left: 270px;
+  padding: 0; /* Remove padding for full-screen effect */
+  width: calc(100% - 270px); /* Full width minus sidebar */
+  height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+  background: #282c34; /* Matches Atom One Dark theme */
+}
+
+/* Code Display Section */
+.code-display {
+  font-variant: normal;
+  flex: 1; /* Take full available space */
+  padding: 20px;
+  overflow: auto; /* Scroll if code exceeds height */
+  background: transparent; /* No extra background over full-screen */
+}
+
+.code-display h2 {
+  font-size: 1.5rem; /* Smaller than 2rem */
+  color: #ffffff; /* White for contrast on dark bg */
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Reduced from 2px for compactness */
+  margin-bottom: 15px; /* Slightly less than 20px */
+  text-align: center;
+  background: repeating-linear-gradient(4deg, #729aff , #dcf1ed); /* Repeating gradient */
+  padding: 8px 16px; /* Padding for background */
+  border-radius: 10px; /* Rounded edges */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.code-display pre {
+  margin: 0;
+  padding: 15px;
+  border-radius: 0; /* No rounding for full-screen */
+  overflow-x: auto;
+  font-size: 1rem;
+  background: transparent; /* Blend with full-screen bg */
+  min-height: 100%; /* Ensure it stretches full height */
+}
+
+.code-display code {
+  color: #dcdcdc;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .full-screen-code {
+      margin-left: 220px;
+      width: calc(100% - 220px);
+  }
+  .code-display {
+      padding: 15px;
+  }
+  .code-display h2 {
+      font-size: 1.3rem; /* Slightly smaller */
+  }
+}
+
+@media (max-width: 768px) {
+  .full-screen-code {
+      margin-left: 80px;
+      width: calc(100% - 80px);
+  }
+  .code-display {
+      padding: 10px;
+  }
+  .code-display h2 {
+      font-size: 1.2rem; /* Even smaller for mobile */
+      padding: 6px 12px; /* Adjust padding */
+  }
+  .code-display pre {
+      font-size: 0.9rem;
+  }
+}
+/* ------------------------------------------------------------------------------ */
+
+
+
+
+
 /* Responsive Design */
 @media (max-width: 992px) {
   /* Tablet */

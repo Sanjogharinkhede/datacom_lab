@@ -4,7 +4,8 @@ import json
 # Base paths constants
 BASE_PATH = 'images'
 OUTPUT_FILE = os.path.join(BASE_PATH, 'generated_images.json')
-
+PY_PATH = 'Python_script'
+PY_OUTPUT = 'my_py.json' 
 
 # scan and generate a dict/json
 def scan_images():
@@ -52,8 +53,17 @@ def save_json(data, output_file):
         json.dump(data, f, ensure_ascii=False, indent=4)
     print(f" Image data exported to {output_file}")
 
+def scan_scripts():
+    scripts = [
+        file for file in os.listdir(PY_PATH)
+        if file.lower().endswith('.py')
+    ]
+    return scripts
 
 # on executing
 if __name__ == "__main__":
     image_data = scan_images()
     save_json(image_data, OUTPUT_FILE)
+    
+    py_data = scan_scripts()
+    save_json(py_data, PY_OUTPUT)
