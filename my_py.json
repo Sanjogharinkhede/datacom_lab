@@ -1,4 +1,5 @@
 [
+    "connect_static_route.py",
     "connect_with_netmiko.py",
     "first.py",
     "Netconf_using_ncclient.py",

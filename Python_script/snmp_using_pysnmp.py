@@ -1,4 +1,3 @@
-
 from pysnmp.hlapi import getCmd, SnmpEngine, CommunityData, UdpTransportTarget, ContextData, ObjectType, ObjectIdentity
 
 iterator = getCmd(
@@ -23,9 +22,3 @@ elif errorStatus:
 else:
     for varBind in varBinds:
         print(f"{varBind[0]} = {varBind[1]}")
-
-
-'''
-    IMP Note:
-    NOT work as intended due to library issues 
-'''
