@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', async function () {
      */
     async function generateAndDisplayContent(category, topic, topicText) {
         try {
-            const envResponse = await fetch('.env');
-            const envText = await envResponse.text();
-            const apiKeyMatch = envText.match(/GEMINI_API_KEY=(.+)/);
-            if (!apiKeyMatch) throw new Error('API key not found in .env');
-            const apiKey = apiKeyMatch[1].trim();
+            // const envResponse = await fetch('.env');
+            // const envText = await envResponse.text();
+            // const apiKeyMatch = envText.match(/GEMINI_API_KEY=(.+)/);
+            // if (!apiKeyMatch) throw new Error('API key not found in .env');
+            // const apiKey = apiKeyMatch[1].trim();
 
             // Enhanced prompt with strict structure and examples
             const prompt = `
