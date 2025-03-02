@@ -587,6 +587,53 @@ footer ul li img {
 
 
 
+/* Add/Modify in style.css if needed */
+
+/* Ensure generated content matches layout */
+#generatedContent {
+  margin-top: 20px;
+}
+
+#generatedContent .card-body h5 {
+  font-size: 1.2rem;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+#generatedContent .card-body p {
+  font-size: 1rem;
+  color: #2d3436;
+  margin-bottom: 15px;
+}
+
+#generatedContent .card-body ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+#generatedContent .card-body ul li:before {
+  content: "✔";
+  color: #55efc4;
+  margin-right: 8px;
+}
+
+#generatedContent .card-body pre {
+  background: #1e272e;
+  color: #dcdcdc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive Design */
@@ -709,5 +756,161 @@ footer ul li img {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+
+.ai-button {
+  padding: 8px 14px;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background: linear-gradient(45deg, #2a004f, #6a0dad, #000);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 20px rgba(106, 13, 173, 0.6),
+              inset 0 3px 6px rgba(255, 255, 255, 0.25),
+              inset 0 -3px 6px rgba(0, 0, 0, 0.4);
+  transform: perspective(600px) rotateX(10deg) translateZ(0);
+  transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+.ai-button i {
+  margin-right: 8px;
+  font-size: 14px;
+  transition: transform 0.4s ease;
+}
+
+/* Hover state */
+.ai-button:hover {
+  background: linear-gradient(135deg, #ff00cc, #4b0082, #00ffcc);
+  transform: perspective(600px) rotateX(10deg) translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(255, 0, 204, 0.7), 
+              0 0 12px rgba(0, 255, 204, 0.5),
+              inset 0 3px 6px rgba(255, 255, 255, 0.25),
+              inset 0 -3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Pulse effect (default) */
+.ai-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  animation: pulse 2s infinite ease-in-out;
+  z-index: 1;
+}
+
+/* Particle effect (default) */
+.ai-button::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  top: 15%;
+  left: 85%;
+  opacity: 1;
+  animation: particle 1.5s infinite ease-out;
+  z-index: 2;
+}
+
+/* Hover animations */
+.ai-button:hover::before {
+  animation: pulse 1s infinite ease-in-out, 
+            magicSparkle 0.8s infinite alternate;
+}
+
+.ai-button:hover i {
+  transform: scale(1.2) rotate(20deg) translateX(2px);
+  animation: wandWave 0.5s infinite alternate;
+}
+
+/* Click effect */
+.ai-button:active {
+  transform: perspective(600px) rotateX(10deg) scale(0.95);
+  box-shadow: 0 4px 10px rgba(255, 0, 204, 0.5),
+              inset 0 3px 6px rgba(255, 255, 255, 0.25),
+              inset 0 -3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Single 3D Blinking Star on click */
+.ai-button.clicked span::after {
+  content: '\f005'; /* Single Font Awesome star */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  color: #fff;
+  font-size: 14px;
+  transform: perspective(800px) translateY(-50%) translateZ(0);
+  animation: starTrail3D 2.4s infinite ease-out; /* Longer cycle for sequence */
+  z-index: 10;
+}
+
+/* Text and icon above effects */
+.ai-button span, .ai-button i {
+  position: relative;
+  z-index: 3;
+}
+
+.ai-button span {
+  position: relative;
+  display: inline-block;
+}
+
+/* Keyframes */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.05); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 0.3; }
+}
+
+@keyframes particle {
+  0% { transform: translate(0, 0); opacity: 1; }
+  100% { transform: translate(-40px, 15px); opacity: 0; }
+}
+
+@keyframes magicSparkle {
+  0% { background: rgba(255, 255, 255, 0.1); }
+  100% { background: rgba(255, 0, 204, 0.3); }
+}
+
+@keyframes wandWave {
+  0% { transform: scale(1.2) rotate(20deg) translateX(2px); }
+  100% { transform: scale(1.2) rotate(15deg) translateX(-2px); }
+}
+
+@keyframes starTrail3D {
+  0% {
+      transform: perspective(800px) translateY(-50%) translateX(0) translateZ(0) rotateY(0deg) scale(1);
+      opacity: 1;
+  }
+  25% {
+      transform: perspective(800px) translateY(-30px) translateX(50px) translateZ(40px) rotateY(-30deg) scale(1.2); /* Top-right */
+      opacity: 0.5; /* Blink dim */
+  }
+  50% {
+      transform: perspective(800px) translateY(0) translateX(80px) translateZ(20px) rotateY(-60deg) scale(1); /* Right */
+      opacity: 1; /* Blink bright */
+  }
+  75% {
+      transform: perspective(800px) translateY(-30px) translateX(50px) translateZ(40px) rotateY(-30deg) scale(1.2); /* Top-right again */
+      opacity: 0.5; /* Blink dim */
+  }
+  100% {
+      transform: perspective(800px) translateY(-50%) translateX(0) translateZ(0) rotateY(0deg) scale(1); /* Reset */
+      opacity: 0;
   }
 }

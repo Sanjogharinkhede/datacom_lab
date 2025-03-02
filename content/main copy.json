@@ -1,0 +1,61 @@
+{
+  "Datacom": {
+    "ospf": {
+      "full_form": "Open Shortest Path First",
+      "description": "A link-state routing protocol that uses Dijkstra’s algorithm to find the shortest path in an IP network.",
+      "benefits": [
+        "Fast convergence",
+        "Scalable for large networks",
+        "Supports multiple areas for hierarchy"
+      ],
+      "disadvantages": [
+        "Complex configuration",
+        "High resource usage (CPU/memory)",
+        "Requires careful planning"
+      ]
+    },
+    "dhcp": {
+      "full_form": "Dynamic Host Configuration Protocol",
+      "description": "Automatically assigns IP addresses to devices in a network."
+    },
+    "ssh": {
+      "full_form": "Secure Shell",
+      "description": "A protocol for secure remote access to network devices.",
+      "features": "s",
+      "commands": [
+        "ssh -l username 192.168.1.1",
+        "show ssh",
+        "ip ssh version 2"
+      ]
+    }
+  },
+  "NMS": {
+    "Netconf": {
+      "full_form": "NETCONF (Network Configuration Protocol)",
+      "description": "It is a network monitoring protocol which configure network devices like routers, switches programatically. It removes configuration complexity, vendor specific commands and have better efficiency which is generally found in SNMP. </br> Data representation: XML </br> Protocol used: SSH </br> Alternative : RestConf",
+      "features": "Device configuration management(CRUD of devices)<br> Transactional changes(support commit and rollback)<br> standaridized and strctured with YAng model",
+      "commands": [
+        "get - Retrieve operational data e.g., interface status.",
+        "get-config - Retrieve configuration data.",
+        "edit-config - Modify the device configuration.",
+        "commit - Apply candidate configuration to the running state.",
+        "discard-changes - Discard uncommitted changes.",
+        "lock and unlock - Prevent concurrent edits during a session.",
+        "delete-config - Delete a specified data store (e.g., candidate).",
+        "close-session"
+      ],
+      "benefits": [
+        "Automation-Ready(SDN and automation tool like ansible etc)",
+        "Standardized(Yang models)",
+        "Error Handling(validation and rollback)",
+        "Security(due to ssh)"
+      ],
+      "disadvantages": [
+        "Complexity(XML and other learning curve)",
+        "Performance overhead (XML And SSH compare to json and Rest features)",
+        "Scalability(separate SSH connection for each ssh connection, which limits how many simultaneous sessions a server can manage.)"
+        
+      ]
+    }
+  }
+}
