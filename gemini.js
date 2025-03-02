@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
             const myHeaders = new Headers();
             myHeaders.append('Content-Type', 'application/json');
-            myHeaders.append('x-goog-api-key', apiKey);
+            myHeaders.append('x-goog-api-key', "AIzaSyChn5MaunVyrExauHPstceTwaxtOtdTI14");
 
             const requestOptions = {
                 method: 'POST',
