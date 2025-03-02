@@ -78,8 +78,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                     generationConfig: { response_mime_type: 'application/json' }
                 })
             };
-
-            const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent', requestOptions);
+            const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent', requestOptions);
             if (!response.ok) throw new Error('Gemini API request failed');
             const result = await response.json();
             const jsonResponse = result.candidates[0].content.parts[0].text;
