@@ -2,3 +2,5 @@ gns project/Lab_2_dynamic/project-files/dynamips/*.ghost
 gns project/Lab_2_dynamic/project-files/dynamips/*.image
 gns project/Lab_2_dynamic/project-files/dynamips/*.bin
 gns project/Lab_2_dynamic/project-files/dynamips/*.img
+.env
+.idea

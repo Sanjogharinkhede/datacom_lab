@@ -94,5 +94,7 @@ def delete_present_interfaces():
                 print(f"Failed to delete {iface_name}. Status: {del_response.status_code}")
                 print(del_response.text)
             time.sleep(1)
+            
+            
 print(get_present_loopbacks())
 delete_present_interfaces()
