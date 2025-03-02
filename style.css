@@ -35,7 +35,7 @@ body::before {
   border-radius: 0 20px 20px 0;
   overflow-y: auto;
   box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
-  z-index: 10; /* Above footer */
+  /* z-index: 10; Above footer */
 }
 
 .view-count {
