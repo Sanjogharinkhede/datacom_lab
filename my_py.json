@@ -2,7 +2,10 @@
     "connect_static_route.py",
     "connect_with_netmiko.py",
     "first.py",
+    "Lab1 - Use NETCONF to Access an IOS XE Device.py",
+    "netconf_create_practice.py",
     "Netconf_using_ncclient.py",
+    "restconf_create_update.py",
     "snmp_using_easysnmp.py",
     "snmp_using_pysnmp.py"
 ]
